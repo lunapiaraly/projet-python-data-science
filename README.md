@@ -13,3 +13,5 @@ je pense que c'est un dataset pertinent parce qu'il a été utilisé dans l'enqu
 et pour les données géographiques, je pense qu'on peut utiliser les donénes de l'INSEE : Revenus, pauvreté et niveau de vie en 2019 - Données carroyées (carreau 200m*200m)
 
 1er oje
+
+J'ai trouvé ce site pour la france : https://www.geodair.fr/donnees/consultation
