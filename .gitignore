@@ -4,3 +4,4 @@
 # Raw and processed data
 data/raw/
 data/processed/
+**/data_carreaux/
