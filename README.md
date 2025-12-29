@@ -1,23 +1,69 @@
-# projet-python-data-science
+# Projet Python – Pollution de l’air et niveau de vie en France
 
-dcp on est d'accord que la problématique ça serait : 
-Existe-il un lien géographique entre pollution de l'air et niveau de vie en France?
+*Auteurs : Luna Piaraly, Quentin Gouiffes, Lucas Vital *
 
-et pour les données de pollution, j'ai trouver un dataset bien carré je pense, voici le lien :
-https://sites.wustl.edu/acag/surface-pm2-5/#V6.GL.02.04
+## Présentation
 
-j'ai pris le dataset résolution 0,01° × 0,01°, EU -> ANNUEL -> 2019 par exemple mais on pourra prendre d'autres données.
+Ce projet est réalisé dans le cadre du cours **Python pour la Data Science (2A ENSAE Paris)**. Il étudie le lien entre **pollution de l’air** et **niveau de vie** en France, à partir de données publiques environnementales et socio‑économiques, agrégées à l’échelle communale.
 
-je pense que c'est un dataset pertinent parce qu'il a été utilisé dans l'enquête INSEE : Mobilité résidentielle et inégalités à la pollution de l’air : décrire les disparités d’exposition à la pollution de l’air tout au long de la vie selon le revenu.
+L’objectif est de proposer :
 
-et pour les données géographiques, je pense qu'on peut utiliser les donénes de l'INSEE : Revenus, pauvreté et niveau de vie en 2019 - Données carroyées (carreau 200m*200m)
+* une **analyse descriptive** des données ;
+* une **analyse statistique simple** afin d’explorer l’existence d’un lien entre pollution et conditions de vie.
 
-1er oje
+---
 
-J'ai trouvé ce site pour la france : https://www.geodair.fr/donnees/consultation
+## Problématique
 
-pour faire les stats descriptives j'ai trouvé https://www.data.gouv.fr/datasets/indice-de-la-qualite-de-lair-quotidien-par-commune-indice-atmo c'est des stats quotidiennes de la qualité de l'air par commune avec ça on pourra facilement faire la moyenne sur l'année en plus y a une API c'est pratique à utiliser
+> Existe‑t‑il une relation statistique entre la pollution de l’air et le niveau de vie des communes françaises ?
 
-pour le niveau de vie il y a https://www.data.gouv.fr/datasets/niveau-de-vie-median-et-taux-de-pauvrete-par-type-de-menage/?utm_source=chatgpt.com qui a l'air très complet, il y a les données disponibles pour les communes mais aussi d'autres découpages administratrifs, normalement c'est possible de faire une jointure avec l'autre dataset en utilisant le code la commune, jepense que le mieux c'est d'abord de regarder le premier dataset, le transformer en une ligne par commmune avec juste 3 colonnes, la moyenne de qualité de l'air sur l'année et le code de la commune et le nom de la commune puis faire la jointure avec le deuxième dataset en utilisant le code de commune et éventuellement faire en sorte que y ait que 4 colonnes, niveau de vie, qualoté de l'air, nom de commune et le code de la commune
+---
 
-https://www.insee.fr/fr/statistiques/6036907? 
+## Données
+
+Le projet repose sur le croisement de :
+
+* données de **pollution de l’air** (PM2.5 notamment),
+* données **INSEE** de niveau de vie et d’inégalités,
+* données démographiques communales.
+
+Les données sont nettoyées, harmonisées puis fusionnées pour construire un jeu de données final exploitable.
+
+---
+
+## Organisation des notebooks
+
+Le projet s’articule autour de **trois notebooks**, à exécuter dans l’ordre :
+
+1. **`1_data_collection_cleaning.ipynb`**
+   Collecte, nettoyage et préparation des différentes bases de données.
+
+2. **`2_exploratory_analysis.ipynb`**
+   Analyse descriptive : statistiques, graphiques et visualisations (Plotly).
+
+3. **`3_modelisation.ipynb`**
+   Analyse statistique : corrélations et régressions simples pour étudier le lien entre pollution et niveau de vie.
+
+---
+
+## Méthodologie
+
+* nettoyage et fusion des bases de données ;
+* analyse descriptive univariée et bivariée ;
+* visualisations ;
+* modèles statistiques simples et interprétation économique.
+
+---
+
+## Reproductibilité
+
+* chemins relatifs à la racine du projet ;
+* notebooks commentés et exécutables indépendamment ;
+* dépendances standards Python (pandas, numpy, plotly, statsmodels).
+
+---
+
+## Remarque
+
+Ce projet a une vocation exploratoire et pédagogique : les résultats mettent en évidence des corrélations mais ne permettent pas d’établir une relation causale stricte.
+
