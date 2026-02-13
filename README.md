@@ -1,69 +1,68 @@
-# Projet Python – Pollution de l’air et niveau de vie en France
+# Python Project – Air Pollution and Living Standards in France
 
-*Auteurs : Luna Piaraly, Quentin Gouiffes, Lucas Vital *
+*Authors: Luna Piaraly, Quentin Gouiffes, Lucas Vital*
 
-## Présentation
+## Overview
 
-Ce projet est réalisé dans le cadre du cours **Python pour la Data Science (2A ENSAE Paris)**. Il étudie le lien entre **pollution de l’air** et **niveau de vie** en France, à partir de données publiques environnementales et socio‑économiques, agrégées à l’échelle communale.
+This project was conducted as part of the course **Python for Data Science (2nd year, ENSAE Paris)**. It investigates the relationship between **air pollution** and **living standards** in France using publicly available environmental and socio-economic data aggregated at the municipal level.
 
-L’objectif est de proposer :
+The objective is twofold:
 
-* une **analyse descriptive** des données ;
-* une **analyse statistique simple** afin d’explorer l’existence d’un lien entre pollution et conditions de vie.
-
----
-
-## Problématique
-
-> Existe‑t‑il une relation statistique entre la pollution de l’air et le niveau de vie des communes françaises ?
+- to provide a **descriptive analysis** of the data;
+- to conduct a **basic statistical analysis** exploring whether a relationship exists between pollution levels and living conditions.
 
 ---
 
-## Données
+## Research Question
 
-Le projet repose sur le croisement de :
-
-* données de **pollution de l’air** (PM2.5 notamment),
-* données **INSEE** de niveau de vie et d’inégalités,
-* données démographiques communales.
-
-Les données sont nettoyées, harmonisées puis fusionnées pour construire un jeu de données final exploitable.
+> Is there a statistical relationship between air pollution and living standards across French municipalities?
 
 ---
 
-## Organisation des notebooks
+## Data
 
-Le projet s’articule autour de **trois notebooks**, à exécuter dans l’ordre :
+The project combines:
 
-1. **`1_data_collection_cleaning.ipynb`**
-   Collecte, nettoyage et préparation des différentes bases de données.
+- **air pollution data** (including PM2.5 concentrations),
+- **INSEE socio-economic data** on income and inequality,
+- municipal demographic data.
 
-2. **`2_exploratory_analysis.ipynb`**
-   Analyse descriptive : statistiques, graphiques et visualisations (Plotly).
-
-3. **`3_modelisation.ipynb`**
-   Analyse statistique : corrélations et régressions simples pour étudier le lien entre pollution et niveau de vie.
+The datasets are cleaned, harmonized, and merged to construct a final analytical dataset.
 
 ---
 
-## Méthodologie
+## Notebook Structure
 
-* nettoyage et fusion des bases de données ;
-* analyse descriptive univariée et bivariée ;
-* visualisations ;
-* modèles statistiques simples et interprétation économique.
+The project is organized into **three notebooks**, to be run in the following order:
 
----
+1. **`1_data_collection_cleaning.ipynb`**  
+   Data collection, cleaning, and preparation of the different datasets.
 
-## Reproductibilité
+2. **`2_exploratory_analysis.ipynb`**  
+   Descriptive analysis: summary statistics, visualizations, and exploratory plots (Plotly).
 
-* chemins relatifs à la racine du projet ;
-* notebooks commentés et exécutables indépendamment ;
-* dépendances standards Python (pandas, numpy, plotly, statsmodels).
+3. **`3_modelisation.ipynb`**  
+   Statistical analysis: correlations and simple regression models to examine the relationship between pollution and living standards.
 
 ---
 
-## Remarque
+## Methodology
 
-Ce projet a une vocation exploratoire et pédagogique : les résultats mettent en évidence des corrélations mais ne permettent pas d’établir une relation causale stricte.
+- Data cleaning and merging
+- Univariate and bivariate descriptive analysis
+- Data visualization
+- Simple statistical modeling and economic interpretation
 
+---
+
+## Reproducibility
+
+- Relative paths from the project root
+- Fully commented and independently executable notebooks
+- Standard Python dependencies (pandas, numpy, plotly, statsmodels)
+
+---
+
+## Note
+
+This project is exploratory and pedagogical in nature. While it highlights correlations, it does not establish a strict causal relationship.
